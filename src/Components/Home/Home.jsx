@@ -1,5 +1,6 @@
 import Banner from "../BannerSection/Banner";
 import TemplateVideo from "../TemplateVideoSection/TemplateVideo";
+import VoiceSection from "../VoiceSection/VoiceSection";
 
 
 
@@ -8,6 +9,7 @@ const Home = () => {
         <div>
             <Banner />
             <TemplateVideo />
+            <VoiceSection/>
         </div>
     );
 };
