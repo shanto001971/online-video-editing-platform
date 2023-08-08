@@ -23,15 +23,15 @@ const Navbar = () => {
               to="/templates"
               title="Templates"
               className={({ isActive }) =>
-                isActive ? "text-3xl text-black font-extrabold" : "default"
+                isActive ? "text-xl text-black font-bold" : "default"
               }
             >
-              <span className="flex gap-1 text-base text-gray-500 font-medium">
+              <div className="flex gap-1 text-base text-gray-500 font-medium">
                 <span className=" m-1 text-base text-gray-500 font-medium">
                   Templates
                 </span>
                 <BsChevronDown className=" h-6 pt-2 text-gray-600" />
-              </span>
+              </div>
             </NavLink>
           </li>
           <li>
@@ -39,7 +39,7 @@ const Navbar = () => {
               to="/explore"
               title="Explore"
               className={({ isActive }) =>
-                isActive ? "text-3xl text-black font-extrabold" : "default"
+                isActive ? "text-xl text-black font-bold" : "default"
               }
             >
               <span className="flex gap-1 text-base text-gray-500 font-medium">
@@ -55,7 +55,7 @@ const Navbar = () => {
               to="/learn"
               title="Learn"
               className={({ isActive }) =>
-                isActive ? "text-3xl text-black font-extrabold" : "default"
+                isActive ? "text-xl text-black font-bold" : "default"
               }
             >
               <span className="flex gap-1 text-base text-gray-500 font-medium">
@@ -71,7 +71,7 @@ const Navbar = () => {
               to="/support"
               title="Support"
               className={({ isActive }) =>
-                isActive ? "text-3xl text-black font-extrabold" : "default"
+                isActive ? "text-xl text-black font-bold" : "default"
               }
             >
               <span className="flex gap-1 text-base text-gray-500 font-medium">
@@ -87,7 +87,7 @@ const Navbar = () => {
               to="/pricing"
               title="Pricing"
               className={({ isActive }) =>
-                isActive ? "text-3xl text-black font-extrabold" : "default"
+                isActive ? "text-xl text-black font-bold" : "default"
               }
             >
               Pricing
@@ -100,7 +100,7 @@ const Navbar = () => {
             <NavLink
               to="/register"
               title="Sign Up"
-              className={({ isActive }) => (isActive ? "text-3xl text-black font-extrabold" : "default")}
+              className={({ isActive }) => (isActive ? "text-xl text-black font-bold" : "default")}
             >
               Sign Up
             </NavLink>
@@ -109,7 +109,7 @@ const Navbar = () => {
             <NavLink
               to="/login"
               title="Log In"
-              className={({ isActive }) => (isActive ? "active" : "default")}
+              className={({ isActive }) => (isActive ? "text-xl text-black font-bold" : "default")}
             >
               Login
             </NavLink>
@@ -166,7 +166,7 @@ const Navbar = () => {
                         title="Templates"
                         className={({ isActive }) =>
                           isActive
-                            ? "text-3xl text-black font-extrabold"
+                            ? "text-xl text-black font-bold"
                             : "default"
                         }
                       >
@@ -185,7 +185,7 @@ const Navbar = () => {
                         title="Explore"
                         className={({ isActive }) =>
                           isActive
-                            ? "text-3xl text-black font-extrabold"
+                            ? "text-xl text-black font-bold"
                             : "default"
                         }
                       >
@@ -203,7 +203,7 @@ const Navbar = () => {
                         title="Learn"
                         className={({ isActive }) =>
                           isActive
-                            ? "text-3xl text-black font-extrabold"
+                            ? "text-xl text-black font-bold"
                             : "default"
                         }
                       >
@@ -221,7 +221,7 @@ const Navbar = () => {
                         title="Support"
                         className={({ isActive }) =>
                           isActive
-                            ? "text-3xl text-black font-extrabold"
+                            ? "text-xl text-black font-bold"
                             : "default"
                         }
                       >
@@ -237,7 +237,7 @@ const Navbar = () => {
             <NavLink
               to="/register"
               title="Sign Up"
-              className={({ isActive }) => (isActive ? "text-3xl text-black font-extrabold" : "default")}
+              className={({ isActive }) => (isActive ? "text-xl text-black font-bold" : "default")}
             >
               Signup
             </NavLink>
