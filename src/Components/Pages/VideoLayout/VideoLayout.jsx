@@ -3,8 +3,8 @@ import video from '../../../../public/Fluid_Animations_86db7504d9.mp4';
 
 const VideoLayout = () => {
 	return (
-		<div className="md:flex h-[100vh] my-10">
-			<div className="border mr-10 p-8 bg-gray-100 rounded-3xl">
+		<div className="md:flex md:h-[100vh] my-10">
+			<div className="w-full md:w-auto border p-8 mr-10 mb-5 md:mb-0 bg-gray-100 rounded-3xl ">
 				<h2 className="text-3xl font-bold">
 					Add your team and collaborate on your video
 				</h2>
@@ -14,8 +14,8 @@ const VideoLayout = () => {
 					your team members.
 				</h4>
 			</div>
-			<div className="border bg-blue-300 rounded-3xl">
-				<h2 className="text-3xl font-bold p-8">
+			<div className="border h-auto bg-[#A3F3FF] rounded-3xl">
+				<h2 className="text-3xl font-bold py-10">
 					Attractive Animations
 				</h2>
 
@@ -25,10 +25,17 @@ const VideoLayout = () => {
 					muted
 					playsInline
 					preload="auto"
-					className="h-[300px] w-[100vw]"
+					className=" md:h-[300px] w-[100vw] rounded-3xl"
 				>
 					<source className="w-full" src={video} type="video/mp4" />
 				</video>
+				<ul className="flex gap-x-3 md:text-2xl font-bold py-10 pl-5 md:pl-10">
+					<li>Slide</li>
+					<li>Blur</li>
+					<li>Bounce</li>
+					<li>Spin</li>
+					<li>Disco</li>
+				</ul>
 			</div>
 		</div>
 	);
