@@ -98,11 +98,11 @@ const Navbar = () => {
         <ul className="items-center hidden space-x-8 lg:flex text-base text-gray-500 font-medium">
           <li>
             <NavLink
-              to="/signup"
+              to="/register"
               title="Sign Up"
               className={({ isActive }) => (isActive ? "text-3xl text-black font-extrabold" : "default")}
             >
-              Signup
+              Sign Up
             </NavLink>
           </li>
           <li>
@@ -235,7 +235,7 @@ const Navbar = () => {
                     </li>
                     <li>
             <NavLink
-              to="/signup"
+              to="/register"
               title="Sign Up"
               className={({ isActive }) => (isActive ? "text-3xl text-black font-extrabold" : "default")}
             >
