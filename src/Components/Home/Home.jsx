@@ -1,4 +1,5 @@
 import Banner from "../BannerSection/Banner";
+import SideIcon from "../SideIcon/SideIcon";
 import TemplateVideo from "../TemplateVideoSection/TemplateVideo";
 import VoiceSection from "../VoiceSection/VoiceSection";
 
@@ -7,9 +8,10 @@ import VoiceSection from "../VoiceSection/VoiceSection";
 const Home = () => {
     return (
         <div>
-            <Banner />
+            <Banner/>
             <TemplateVideo />
             <VoiceSection/>
+            <SideIcon/>
         </div>
     );
 };
