@@ -7,7 +7,7 @@ const LayOut = () => {
     return (
         <>
             <Navbar />
-      <div className="min-h-[calc(100vh-136px)]  px-4  mx-auto sm:max-w-xl md:max-w-full  md:px-24 lg:px-11">
+      <div className="min-h-[calc(100vh-346px)]">
         <Outlet />
       </div>
       <Footer />

@@ -2,7 +2,7 @@ import logo from '../../assets/logo.png';
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 font-semibold sm:px-2 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 bg-neutral text-neutral-content">
+        <footer className="footer p-5 md:p-10  bg-neutral text-neutral-content">
   <div >
    <img className="bg-slate-200" src={logo} alt="" width="80"   />
     <p className='text-base'>MotionMingle Express<br/>Providing reliable Service since 2000</p>
