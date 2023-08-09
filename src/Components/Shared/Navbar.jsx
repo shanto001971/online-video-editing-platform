@@ -1,7 +1,6 @@
 import {  useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import { BsChevronDown } from "react-icons/bs";
 import { RxCross2 } from "react-icons/rx";
 import { AiOutlineMenu } from "react-icons/ai";
 import { AuthContext } from "../../providers/AuthProvider";
@@ -26,12 +25,13 @@ const Navbar = () => {
   }
   
   return (
-    <div className="bg-gray-100 text-gray-500 font-medium px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 sticky top-0 z-10 bg-transparent">
+    <div className="bg-gray-200 text-gray-400 font-semibold text-xl px-4 py-5 mx-auto sm:max-w-xl md:max-w-full  md:px-24 sticky top-0 z-10 bg-transparent backdrop-blur-md">
       <div className="relative flex items-center justify-between">
         {/* Logo Section */}
         <Link to="/" className="inline-flex items-center" title="Home">
           <img src={logo} alt="logo" className=" w-20 rounded-full" />
-          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800">
+         
+          <span className="ml-2 text-lg font-bold tracking-wide text-gray-800 uppercase bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
             Motion Mingle
           </span>
         </Link>
@@ -45,12 +45,7 @@ const Navbar = () => {
                 isActive ? "text-xl text-black font-bold" : "default"
               }
             >
-              <div className="flex gap-1 text-base text-gray-500 font-medium">
-                <span className=" m-1 text-base text-gray-500 font-medium">
-                  Templates
-                </span>
-                <BsChevronDown className=" h-6 pt-2 text-gray-600" />
-              </div>
+             Templates
             </NavLink>
           </li>
           <li>
@@ -61,12 +56,7 @@ const Navbar = () => {
                 isActive ? "text-xl text-black font-bold" : "default"
               }
             >
-              <span className="flex gap-1 text-base text-gray-500 font-medium">
-                <span className=" m-1 text-base text-gray-500 font-medium">
-                  Explore
-                </span>
-                <BsChevronDown className=" h-6 pt-2 text-gray-600" />
-              </span>
+              Explore
             </NavLink>
           </li>
           <li>
@@ -77,12 +67,7 @@ const Navbar = () => {
                 isActive ? "text-xl text-black font-bold" : "default"
               }
             >
-              <span className="flex gap-1 text-base text-gray-500 font-medium">
-                <span className=" m-1 text-base text-gray-500 font-medium">
-                  Learn
-                </span>
-                <BsChevronDown className=" h-6 pt-2 text-gray-600" />
-              </span>
+              Learn
             </NavLink>
           </li>
           <li>
@@ -92,13 +77,7 @@ const Navbar = () => {
               className={({ isActive }) =>
                 isActive ? "text-xl text-black font-bold" : "default"
               }
-            >
-              <span className="flex gap-1 text-base text-gray-500 font-medium">
-                <span className=" m-1 text-base text-gray-500 font-medium">
-                  Support
-                </span>
-                <BsChevronDown className=" h-6 pt-2 text-gray-600" />
-              </span>
+            >Support
             </NavLink>
           </li>
           <li>
@@ -114,7 +93,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <ul className="items-center hidden space-x-8 lg:flex text-base text-gray-500 font-medium">
+        <ul className="items-center hidden space-x-8 lg:flex  text-gray-400 font-semibold text-xl">
           <li>
             <NavLink
               to="/register"
@@ -176,9 +155,10 @@ const Navbar = () => {
                         alt="logo"
                         className="w-14  rounded-full"
                       />
-                      <span className="ml-2 text-lg font-bold tracking-wide text-gray-800 uppercase">
-                        Motion Mingle
-                      </span>
+                      
+                      <span className="ml-2 text-lg font-bold tracking-wide text-gray-800 uppercase bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+            Motion Mingle
+          </span>
                     </NavLink>
                   </div>
                   {/* Dropdown menu close button */}
@@ -205,12 +185,7 @@ const Navbar = () => {
                             : "default"
                         }
                       >
-                        <span className="flex text-base text-gray-500 font-medium">
-                          <span className=" m-1 text-base text-gray-500 font-medium">
-                            Templates
-                          </span>
-                          <BsChevronDown className=" h-5 pt-2 text-gray-600" />
-                        </span>
+                        Templates
                       </Link>
                     </li>
 
@@ -224,12 +199,7 @@ const Navbar = () => {
                             : "default"
                         }
                       >
-                        <span className="flex  text-base text-gray-500 font-medium">
-                          <span className=" m-1 text-base text-gray-500 font-medium">
-                            Explore
-                          </span>
-                          <BsChevronDown className=" h-5 pt-2 text-gray-600" />
-                        </span>
+                        Explore
                       </NavLink>
                     </li>
                     <li>
@@ -242,12 +212,7 @@ const Navbar = () => {
                             : "default"
                         }
                       >
-                        <span className="flex  text-base text-gray-500 font-medium">
-                          <span className=" m-1 text-base text-gray-500 font-medium">
-                            Learn
-                          </span>
-                          <BsChevronDown className=" h-5 pt-2 text-gray-600" />
-                        </span>
+                        Learn
                       </NavLink>
                     </li>
                     <li>
@@ -260,12 +225,7 @@ const Navbar = () => {
                             : "default"
                         }
                       >
-                        <span className="flex text-base text-gray-500 font-medium">
-                          <span className=" m-1 text-base text-gray-500 font-medium">
-                            Support
-                          </span>
-                          <BsChevronDown className=" h-5 pt-2 text-gray-600" />
-                        </span>
+                        Support
                       </NavLink>
                     </li>
                     <li>

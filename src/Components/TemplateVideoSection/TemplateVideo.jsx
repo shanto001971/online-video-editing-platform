@@ -9,22 +9,11 @@ import video6 from "../../assets/videos/video6.mp4";
 const TemplateVideo = () => {
     return (
         <div className='mt-10 mb-10'>
-            <h3 className='text-5xl font-bold mb-10'>Free Video <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  bg-clip-text text-transparent'>Template</span></h3>
+            <h3 className='text-5xl font-bold mb-10 ml-10'>Free Video <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  bg-clip-text text-transparent'>Template</span></h3>
             <div className='grid grid-rows-2 grid-flow-col gap-6'>
                 <HoverVideoPlayer className='row-span-2'
-                    videoSrc={video1}
-                    pausedOverlay={
-                        <img
-                            src="thumbnail-image.jpg"
-                            alt=""
-                            style={{
-                                // Make the image expand to cover the video's dimensions
-                                width: '100%',
-                                height: '80%',
-                                objectFit: 'cover',
-                            }}
-                        />
-                    }
+                    videoSrc={video1} videoStyle={{ width: "100%", height: "100%", borderRadius: "15px" }}
+
                     loadingOverlay={
                         <div className="loading-overlay">
                             <div className="loading-spinner" />
@@ -32,19 +21,8 @@ const TemplateVideo = () => {
                     }
                 />
                 <HoverVideoPlayer className='row-span-1'
-                    videoSrc={video2}
-                    pausedOverlay={
-                        <img
-                            src="thumbnail-image.jpg"
-                            alt=""
-                            style={{
-                                // Make the image expand to cover the video's dimensions
-                                width: '100%',
-                                height: '75%',
-                                objectFit: 'cover',
-                            }}
-                        />
-                    }
+                    videoSrc={video2} videoStyle={{ width: "100%", height: "100%", borderRadius: "15px" }}
+
                     loadingOverlay={
                         <div className="loading-overlay">
                             <div className="loading-spinner" />
@@ -52,19 +30,8 @@ const TemplateVideo = () => {
                     }
                 />
                 <HoverVideoPlayer className='row-span-1'
-                    videoSrc={video3}
-                    pausedOverlay={
-                        <img
-                            src="thumbnail-image.jpg"
-                            alt=""
-                            style={{
-                                // Make the image expand to cover the video's dimensions
-                                width: '100%',
-                                height: '75%',
-                                objectFit: 'cover',
-                            }}
-                        />
-                    }
+                    videoSrc={video3} videoStyle={{ width: "100%", height: "100%", borderRadius: "15px" }}
+
                     loadingOverlay={
                         <div className="loading-overlay">
                             <div className="loading-spinner" />
@@ -72,19 +39,8 @@ const TemplateVideo = () => {
                     }
                 />
                 <HoverVideoPlayer className='row-span-2'
-                    videoSrc={video4}
-                    pausedOverlay={
-                        <img
-                            src="thumbnail-image.jpg"
-                            alt=""
-                            style={{
-                                // Make the image expand to cover the video's dimensions
-                                width: '100%',
-                                height: '80%',
-                                objectFit: 'cover',
-                            }}
-                        />
-                    }
+                    videoSrc={video4} videoStyle={{ width: "100%", height: "100%", borderRadius: "15px" }}
+
                     loadingOverlay={
                         <div className="loading-overlay">
                             <div className="loading-spinner" />
@@ -92,19 +48,8 @@ const TemplateVideo = () => {
                     }
                 />
                 <HoverVideoPlayer className='row-span-1'
-                    videoSrc={video5}
-                    pausedOverlay={
-                        <img
-                            src="thumbnail-image.jpg"
-                            alt=""
-                            style={{
-                                // Make the image expand to cover the video's dimensions
-                                width: '100%',
-                                height: '100%',
-                                objectFit: 'cover',
-                            }}
-                        />
-                    }
+                    videoSrc={video5} videoStyle={{ width: "100%", height: "100%", borderRadius: "15px" }}
+
                     loadingOverlay={
                         <div className="loading-overlay">
                             <div className="loading-spinner" />
@@ -112,19 +57,8 @@ const TemplateVideo = () => {
                     }
                 />
                 <HoverVideoPlayer className='row-span-1'
-                    videoSrc={video6}
-                    pausedOverlay={
-                        <img
-                            src="thumbnail-image.jpg"
-                            alt=""
-                            style={{
-                                // Make the image expand to cover the video's dimensions
-                                width: '100%',
-                                height: '100%',
-                                objectFit: 'cover',
-                            }}
-                        />
-                    }
+                    videoSrc={video6} videoStyle={{ width: "100%", height: "100%", borderRadius: "15px" }}
+
                     loadingOverlay={
                         <div className="loading-overlay">
                             <div className="loading-spinner" />
