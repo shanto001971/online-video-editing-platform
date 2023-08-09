@@ -6,7 +6,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return (
-    <div className="bg-gray-200 text-gray-500 font-medium px-4 py-5 mx-auto sm:max-w-xl md:max-w-full  md:px-24 sticky top-0 z-10 bg-transparent">
+    <div className="bg-gray-200 text-gray-400 font-semibold text-xl px-4 py-5 mx-auto sm:max-w-xl md:max-w-full  md:px-24 sticky top-0 z-10 bg-transparent backdrop-blur-md">
       <div className="relative flex items-center justify-between">
         {/* Logo Section */}
         <Link to="/" className="inline-flex items-center" title="Home">
@@ -74,7 +74,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <ul className="items-center hidden space-x-8 lg:flex text-base text-gray-500 font-medium">
+        <ul className="items-center hidden space-x-8 lg:flex  text-gray-400 font-semibold text-xl">
           <li>
             <NavLink
               to="/register"
