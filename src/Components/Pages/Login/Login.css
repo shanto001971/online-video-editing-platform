@@ -3,8 +3,10 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 40px;
-    width: 300px;
+    /* width: 300px; */
+    /* min-width: 425px; */
 }
+
 
 h2 {
     text-align: center;
@@ -38,6 +40,3 @@ input[type="submit"] {
     transition: background-color 0.3s;
 }
 
-/* input[type="submit"]:hover {
-    background-color: #0056b3;
-} */
