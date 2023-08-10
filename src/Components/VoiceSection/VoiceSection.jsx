@@ -56,6 +56,7 @@ const VoiceSection = () => {
           </span>
         </div>
       </div>
+      
       <div className="relative w-full md:w-[40%] md:h-[450px] lg:h-[600px] h-auto bg-gray-100 rounded-3xl mt-8 md:mt-0 group">
         <h2 className="absolute top-6 md:to-pink-100 text-[22px] md:text-2xl lg:text-4xl font-bold lg:font-extrabold pl-6">
           Brands Kids
