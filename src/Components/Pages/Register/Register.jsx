@@ -7,10 +7,11 @@ import { useContext } from 'react';
 import { AuthContext } from '../../../providers/AuthProvider';
 import Swal from 'sweetalert2';
 import { FaGoogle } from 'react-icons/fa';
+import { FcGoogle } from 'react-icons/fc';
 
 const Register = () => {
 
-const {createUser, updateUserProfile} = useContext(AuthContext);
+const {createUser, updateUserProfile, googleLogin} = useContext(AuthContext);
 const navigate = useNavigate()
 
   const {
@@ -65,6 +66,25 @@ const navigate = useNavigate()
           preserveAspectRatio: 'xMidYMid slice'
         }
       };
+
+      const handleGoogleSingIn = () => {
+      googleLogin()
+      .then(()=> {
+        Swal.fire({
+          position: 'top-center',
+          icon: 'success',
+          title: 'Login successfull',
+          showConfirmButton: false,
+          timer: 1500
+        })
+        navigate(from, { replace: true } );
+        
+      })
+      .catch(error => {
+          console.log(error);
+      })
+  }
+
  
       
     return (
@@ -116,11 +136,14 @@ const navigate = useNavigate()
             </div>
             </form>
             <p className='p-3'><small>Already have an account? <Link to='/login' className='text-orange-500'>Login</Link> </small></p>
-            <div className=' rounded '>
+            <div className=' divider '>
             {/* TODO: social login component will be here */}
-        <button  className='w-full flex justify-center items-center gap-1 bg-gradient-to-r from-cyan-500 to-blue-500 text-center p-2 rounded text-white'> 
+        {/* <button  className='w-full flex justify-center items-center gap-1 bg-gradient-to-r from-cyan-500 to-blue-500 text-center p-2 rounded text-white'> 
         <FaGoogle/> <span className=''> Google</span> 
-         </button>
+         </button> */}
+         <button onClick={handleGoogleSingIn} className="btn btn-circle btn-outline ">
+          <span className="text-2xl"><FcGoogle /></span>
+        </button>
         </div>
         </div>
 
