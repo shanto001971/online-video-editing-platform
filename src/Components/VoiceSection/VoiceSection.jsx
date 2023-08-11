@@ -14,14 +14,14 @@ const VoiceSection = () => {
 
   return (
     <section
-      data-aos="fade-up"
-      data-aos-offset="200"
-      data-aos-delay="50"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="false"
-      data-aos-anchor-placement="top-center"
+      // data-aos="fade-up"
+      // data-aos-offset="200"
+      // data-aos-delay="50"
+      // data-aos-duration="1000"
+      // data-aos-easing="ease-in-out"
+      // data-aos-mirror="true"
+      // data-aos-once="false"
+      // data-aos-anchor-placement="top-center"
       className="relative block md:flex justify-center items-center gap-8  my-16"
     >
       <div className="w-full md:w-[60%] md:h-[450px] lg:h-[600px] h-auto video-side px-4">
