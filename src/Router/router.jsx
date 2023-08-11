@@ -28,13 +28,5 @@ export const router = createBrowserRouter([
                 element: <Register></Register>
             }
         ]
-<<<<<<< HEAD
     }
-=======
-    },
-    {
-        path: "/dashboard",
-        element: <Dashboard />
-    },
->>>>>>> origin/diljahanToyshi
 ]);
