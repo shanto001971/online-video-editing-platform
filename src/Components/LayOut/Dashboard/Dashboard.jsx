@@ -15,7 +15,7 @@ const Dashboard = () => {
             <img src={logo} alt="logo" className=" w-16 rounded-full" />
           </Link>
 
-          <span className="items-center ml-4 space-x-8 lg:flex  text-gray-400 font-normal text-base hover:text-black hover:font-semibold">
+          <span className="items-center cursor-pointer ml-4 space-x-8 lg:flex  text-gray-400 font-normal text-base hover:text-black hover:font-semibold">
             Learn{" "}
             <BsChevronDown className="ml-2 w-2 text-slate-500 font-extrabold" />
           </span>
@@ -23,15 +23,10 @@ const Dashboard = () => {
 
         <ul className="items-center hidden space-x-8 lg:flex  text-gray-400 font-semibold text-xl">
           <li>
-            <NavLink
-              to="/register"
-              title="Sign Up"
-              className={({ isActive }) =>
-                isActive ? "text-xl text-black font-bold" : "default"
-              }
-            >
-              Sign Up
-            </NavLink>
+          <button className=" px-3 py-1 bg-violet-500 rounded-lg ">
+                       
+                        <span className=" text-white  flex items-center gap-2">Create New<BsChevronDown/></span>
+                    </button>
           </li>
           <li>
             <NavLink
