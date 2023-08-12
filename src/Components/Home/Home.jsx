@@ -2,7 +2,6 @@ import Banner from '../BannerSection/Banner';
 import VideoLayout from '../Pages/VideoLayout/VideoLayout';
 import TemplateVideo from '../TemplateVideoSection/TemplateVideo';
 import VoiceSection from '../VoiceSection/VoiceSection';
-import ScrollSection from './ScrollSection/ScrollSection';
 
 const Home = () => {
 	return (
@@ -11,7 +10,7 @@ const Home = () => {
 			<TemplateVideo />
 			<VoiceSection />
 			<VideoLayout></VideoLayout>
-			<ScrollSection></ScrollSection>
+			<Scroll
 		</div>
 	);
 };

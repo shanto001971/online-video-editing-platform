@@ -14,14 +14,14 @@ const VoiceSection = () => {
 
   return (
     <section
-      data-aos="fade-up"
-      data-aos-offset="200"
-      data-aos-delay="50"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="false"
-      data-aos-anchor-placement="top-center"
+      // data-aos="fade-up"
+      // data-aos-offset="200"
+      // data-aos-delay="50"
+      // data-aos-duration="1000"
+      // data-aos-easing="ease-in-out"
+      // data-aos-mirror="true"
+      // data-aos-once="false"
+      // data-aos-anchor-placement="top-center"
       className="relative block md:flex justify-center items-center gap-8  my-16"
     >
       <div className="w-full md:w-[60%] md:h-[450px] lg:h-[600px] h-auto video-side px-4">
@@ -56,6 +56,7 @@ const VoiceSection = () => {
           </span>
         </div>
       </div>
+      
       <div className="relative w-full md:w-[40%] md:h-[450px] lg:h-[600px] h-auto bg-gray-100 rounded-3xl mt-8 md:mt-0 group">
         <h2 className="absolute top-6 md:to-pink-100 text-[22px] md:text-2xl lg:text-4xl font-bold lg:font-extrabold pl-6">
           Brands Kids
