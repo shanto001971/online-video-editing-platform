@@ -23,7 +23,7 @@ const ScrollSection = () => {
 
   return (
   <>
-  <p className='text-5xl md:text-center font-bold my-3'>Use the full power of video <br /> <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text'>to grow your brand
+  <p className='text-5xl md:text-center font-bold my-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text'>Use the full power of video <br /> <span className=''>to grow your brand
 </span>
 </p>
   <div  className='lg:hidden'>
