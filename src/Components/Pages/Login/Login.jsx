@@ -6,10 +6,11 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from './../../../providers/AuthProvider';
 import { useContext, useState } from 'react';
 import Swal from 'sweetalert2';
-import { FaGoogle } from 'react-icons/fa';
+// import { FaGoogle } from 'react-icons/fa';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
-  const {signInUser, googleLogin} = useContext(AuthContext);
+  const {signInUser} = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const [error, setError] = useState('');
@@ -72,25 +73,6 @@ const Login = () => {
     }
 
 
-    const handleGoogleSingIn = () => {
-      
-      googleLogin()
-      .then(()=> {
-        Swal.fire({
-          position: 'top-center',
-          icon: 'success',
-          title: 'Login successfull',
-          showConfirmButton: false,
-          timer: 1500
-        })
-        navigate(from, { replace: true } );
-        
-      })
-      .catch(error => {
-          console.log(error);
-      })
-  }
-
 
     return (
         <div className='bg-gradient-to-r from-cyan-300 to-blue-300 lg:h-[800px]'>
@@ -115,12 +97,16 @@ const Login = () => {
         </div>
         </form>
         <p className='p-3'><small>New here? <Link to='/register' className='text-orange-500'>Register</Link> </small></p>
-        <div className=' rounded '>
+
+        <div>
             {/* TODO: social login component will be here */}
-        <button  onClick={handleGoogleSingIn} className='w-full flex justify-center items-center gap-1 bg-gradient-to-r from-cyan-500 to-blue-500 text-center p-2 rounded text-white'> 
+          <SocialLogin></SocialLogin>
+        {/* <button  onClick={handleGoogleSingIn} className='w-full flex justify-center items-center gap-1 bg-gradient-to-r from-cyan-500 to-blue-500 text-center p-2 rounded text-white'> 
         <FaGoogle/> <span className=''> Google</span> 
-         </button>
+         </button> */}
+
         </div>
+
     </div>
 
     {/* right section */}
