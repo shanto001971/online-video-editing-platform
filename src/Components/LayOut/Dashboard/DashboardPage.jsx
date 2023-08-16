@@ -6,6 +6,7 @@ const DashboardPage = () => {
         <div className="divide-y divide-slate-400 ">
           <Dashboard></Dashboard> 
           <SideBar></SideBar> 
+          
         </div>
     );
 };
