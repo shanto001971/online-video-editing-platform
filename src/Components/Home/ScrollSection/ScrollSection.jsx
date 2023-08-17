@@ -23,7 +23,7 @@ const ScrollSection = () => {
 
   return (
   <>
-  <p className='text-5xl md:text-center font-bold my-3 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text'>Use the full power of video <br /> <span className=''>to grow your brand
+  <p className='  text-5xl md:text-center font-bold sm:my-3 md:py-6 lg:py-11 '>Use the full power of video <br /> <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text'>to grow your brand
 </span>
 </p>
   <div  className='lg:hidden'>
@@ -72,7 +72,7 @@ const ScrollSection = () => {
 </div>
   </div>
    <div className='hidden lg:block'>
-     <div className="flex my-11 scroll-smooth">
+     <div className="flex my-8 py-16 scroll-smooth">
      <div className="w-1/2 overflow-y-auto">
         {/* Scrolling Content */}
         <div className="p-8 pl-10">

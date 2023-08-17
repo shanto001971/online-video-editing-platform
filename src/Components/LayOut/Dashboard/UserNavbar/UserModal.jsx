@@ -5,9 +5,9 @@ function UserModal({ user }) {
  
 
   return (
-    <div>
+    <div >
       
-    <div className="dropdown dropdown-hover">
+    <div className="dropdown dropdown-hover ">
   <label tabIndex={0} className="md:flex items-center gap-1 m-1">
   {user && (
         <li
@@ -16,13 +16,13 @@ function UserModal({ user }) {
           <div
             className="btn btn-circle text-white text-base font-bold bg-violet-500 hover:text-white hover:bg-violet-500"
           >
-            {user.displayName.slice(0, 1)}
+            {user?.displayName.slice(0, 1)}
           </div>
           <BsChevronDown className="hidden md:block text-gray-800 h-3 font-extrabold" />
         </li>
       )}</label>
-  <div tabIndex={0} className="dropdown-content z-[1] text-slate-300 menu p-3 lg:px-9 md:p-5 shadow-lg bg-black rounded-box w-auto mr-48">
-  <p className="py-2">Hi,{user.displayName.split(' ')[0]}</p>
+  <div tabIndex={0} className="dropdown-content z-[1] text-slate-300 menu  p-3 md:p-5 shadow-lg bg-black rounded-box  lg:w-32 ">
+  <p className="py-2">Hi,{user?.displayName.split(' ')[0]}</p>
 
  
             <NavLink
