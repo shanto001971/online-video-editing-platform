@@ -94,7 +94,7 @@ const Navbar = () => {
         </ul>
 
         <ul className="items-center hidden space-x-8 lg:flex  text-gray-400 font-semibold text-xl">
-          <li>
+          {/* <li>
             <NavLink
               to="/register"
               title="Sign Up"
@@ -102,7 +102,7 @@ const Navbar = () => {
             >
               Sign Up
             </NavLink>
-          </li>
+          </li> */}
           {/* <li>
             <NavLink
               to="/login"
@@ -114,7 +114,13 @@ const Navbar = () => {
           </li> */}
 
           {
-            user ? <><button onClick={handleLogOut} className=" text-gray-500  default">Logout</button></> : <>
+            user ? <>
+            <small>{user.displayName}</small> <img style={{width:"40px", borderRadius:'50%', marginLeft:'7px'}} src={user.photoURL} alt="" />
+            <button onClick={handleLogOut} className=" text-gray-500  default">Logout</button>
+            
+            </> 
+            
+            : <>
             <li>
             <NavLink
               to="/login"
@@ -124,6 +130,17 @@ const Navbar = () => {
               Login
             </NavLink>
           </li>
+
+            { <li>
+            <NavLink
+              to="/register"
+              title="Sign Up"
+              className={({ isActive }) => (isActive ? "text-xl text-gray-500  font-bold" : "default")}
+            >
+              Sign Up
+            </NavLink>
+          </li> }
+
             </>
           }
 
