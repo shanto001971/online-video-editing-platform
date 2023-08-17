@@ -99,6 +99,7 @@ function UserModal({ user }) {
   </div>
 </div>
     </div>
+    </div>
   );
 }
 

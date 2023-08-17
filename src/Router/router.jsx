@@ -5,11 +5,13 @@ import Templates from "../Components/Pages/Templates/Templates";
 import Login from "../Components/Pages/Login/Login";
 import Register from "../Components/Pages/Register/Register";
 import DashboardPage from "../Components/LayOut/Dashboard/DashboardPage";
+import ErrorPage from './../Components/Pages/ErrorPage';
 
 export const router = createBrowserRouter([
     {
         path: "/",
         element: <LayOut />,
+        errorElement:<ErrorPage/>,
         children: [
             {
                 path: "/",
