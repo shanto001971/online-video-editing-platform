@@ -94,29 +94,13 @@ const Navbar = () => {
         </ul>
 
         <ul className="items-center hidden space-x-8 lg:flex  text-gray-400 font-semibold text-xl">
-          {/* <li>
-            <NavLink
-              to="/register"
-              title="Sign Up"
-              className={({ isActive }) => (isActive ? "text-xl text-black font-bold" : "default")}
-            >
-              Sign Up
-            </NavLink>
-          </li> */}
-          {/* <li>
-            <NavLink
-              to="/login"
-              title="Log In"
-              className={({ isActive }) => (isActive ? "text-xl text-black font-bold" : "default")}
-            >
-              Login
-            </NavLink>
-          </li> */}
+
+          {/* Conditional rendering login logout */}
 
           {
             user ? <>
-            <small>{user.displayName}</small> <img style={{width:"40px", borderRadius:'50%', marginLeft:'7px'}} src={user.photoURL} alt="" />
-            <button onClick={handleLogOut} className=" text-gray-500  default">Logout</button>
+             <img title={user?.displayName} style={{width:"40px", borderRadius:'50%', marginLeft:'7px'}} src={user.photoURL} alt="" />
+            <button onClick={handleLogOut} className="text-[16px] text-gray-500  default">Logout</button>
             
             </> 
             
@@ -125,7 +109,7 @@ const Navbar = () => {
             <NavLink
               to="/login"
               title="Log In"
-              className={({ isActive }) => (isActive ? "text-xl text-black font-bold" : "default")}
+              className={({ isActive }) => (isActive ? "text-[16px] text-black font-bold" : "default text-[16px]")}
             >
               Login
             </NavLink>
@@ -135,7 +119,7 @@ const Navbar = () => {
             <NavLink
               to="/register"
               title="Sign Up"
-              className={({ isActive }) => (isActive ? "text-xl text-gray-500  font-bold" : "default")}
+              className={({ isActive }) => (isActive ? "text-[16px] text-gray-400  font-bold" : "default text-[16px]")}
             >
               Sign Up
             </NavLink>
@@ -254,27 +238,37 @@ const Navbar = () => {
               Signup
             </NavLink>
           </li>
-          {/* <li>
-            <NavLink
-              to="/login"
-              title="Log In"
-              className={({ isActive }) => (isActive ? "active" : "default")}
-            >
-              Login
-            </NavLink>
-          </li> */}
+          
+          {/*conditional rendering login logout */}
 
-          {
-            user ? <><button onClick={handleLogOut} className=" text-gray-500  default">Logout</button></> : <>
+        {
+            user ? <>
+             <img title={user?.displayName} style={{width:"40px", borderRadius:'50%', marginLeft:'7px'}} src={user.photoURL} alt="" />
+            <button onClick={handleLogOut} className="text-[16px] text-gray-500  default">Logout</button>
+            
+            </> 
+            
+            : <>
             <li>
             <NavLink
               to="/login"
               title="Log In"
-              className={({ isActive }) => (isActive ? "text-xl text-black font-bold" : "default")}
+              className={({ isActive }) => (isActive ? "text-[16px] text-black font-bold" : "default text-[16px]")}
             >
               Login
             </NavLink>
           </li>
+
+            { <li>
+            <NavLink
+              to="/register"
+              title="Sign Up"
+              className={({ isActive }) => (isActive ? "text-[16px] text-gray-400  font-bold" : "default text-[16px]")}
+            >
+              Sign Up
+            </NavLink>
+          </li> }
+
             </>
           }
 
