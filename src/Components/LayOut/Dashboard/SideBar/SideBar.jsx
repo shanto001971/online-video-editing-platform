@@ -12,10 +12,10 @@ import DemoVideo from "../../../Pages/VideoEditPage/DemoVideo/DemoVideo";
 import DemoImage from "../../../Pages/VideoEditPage/DemoImage/DemoImage";
 import DemoMusic from "../../../Pages/VideoEditPage/DemoMusic/DemoMusic";
 import DemoTemplate from "../../../Pages/VideoEditPage/DemoTemplate/DemoTemplate";
-import './Sidebar.css'
+import "./Sidebar.css";
 
 const SideBar = () => {
-  const [activeComponent, setActiveComponent] = useState('DemoVideo'); //by default component uses active component
+  const [activeComponent, setActiveComponent] = useState("DemoVideo"); //by default component uses active component
 
   const handleButtonClick = (componentName) => {
     setActiveComponent(componentName);
@@ -27,6 +27,7 @@ const SideBar = () => {
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col items-center justify-center">
           {/* Page content here */}
+          
           <label
             htmlFor="my-drawer-2"
             className="btn btn-primary drawer-button mt-6 mr-36 lg:hidden"
@@ -48,21 +49,30 @@ const SideBar = () => {
                   </span>
                 </div>
 
-                <button onClick={() => handleButtonClick('DemoVideo')} className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group cursor-pointer">
+                <button
+                  onClick={() => handleButtonClick("DemoVideo")}
+                  className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group cursor-pointer"
+                >
                   <PiVideoLight className="text-[20px] sm:text-[28px]  group-hover:scale-95" />
                   <span className="text-[8px] sm:text-[10px] font-medium">
                     Videos
                   </span>
                 </button>
 
-                <button onClick={() => handleButtonClick('DemoImage')} className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
+                <button
+                  onClick={() => handleButtonClick("DemoImage")}
+                  className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group"
+                >
                   <LiaImageSolid className="text-[20px] sm:text-[28px]  group-hover:scale-95" />
                   <span className="text-[8px] sm:text-[10px] font-medium">
                     Images
                   </span>
                 </button>
 
-                <button onClick={() => handleButtonClick('DemoMusic')} className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
+                <button
+                  onClick={() => handleButtonClick("DemoMusic")}
+                  className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group"
+                >
                   <PiMusicNoteLight className="text-[20px] sm:text-[28px] group-hover:scale-95" />
                   <span className="text-[8px] sm:text-[10px] font-medium">
                     Music
@@ -90,7 +100,10 @@ const SideBar = () => {
                   </span>
                 </button>
 
-                <button onClick={() => handleButtonClick('DemoTemplate')} className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
+                <button
+                  onClick={() => handleButtonClick("DemoTemplate")}
+                  className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group"
+                >
                   <GoProjectTemplate className="text-[20px] sm:text-[28px]  group-hover:scale-95" />
                   <span className="text-[8px] sm:text-[10px] font-medium">
                     Templates
@@ -108,13 +121,12 @@ const SideBar = () => {
 
             {/* 2nd column content here */}
             <>
-            <div className="w-[270px] h-[90vh] overflow-y-scroll custom-scrollbar">
-            
-            {activeComponent === 'DemoVideo' && <DemoVideo />}
-            {activeComponent === 'DemoImage' && <DemoImage />}
-            {activeComponent === 'DemoMusic' && <DemoMusic />}
-            {activeComponent === 'DemoTemplate' && <DemoTemplate />}
-            </div>
+              <div className="w-[270px] h-[90vh] overflow-y-scroll custom-scrollbar">
+                {activeComponent === "DemoVideo" && <DemoVideo />}
+                {activeComponent === "DemoImage" && <DemoImage />}
+                {activeComponent === "DemoMusic" && <DemoMusic />}
+                {activeComponent === "DemoTemplate" && <DemoTemplate />}
+              </div>
             </>
           </ul>
         </div>
