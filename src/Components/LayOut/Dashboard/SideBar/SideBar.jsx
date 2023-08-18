@@ -9,10 +9,12 @@ const SideBar = () => {
           {/* Page content here */}
           <label
             htmlFor="my-drawer-2"
-            className="btn btn-primary drawer-button mt-6 mr-36 lg:hidden"
+            className="btn btn-primary px-8 py-3 font-semibold rounded bg-gradient-to-r from-cyan-500 via-blue-500 to-violet-500 text-gray-100
+            mt-6 mr-36 lg:hidden"
           >
             Open drawer
           </label>
+          
         </div>
         <div className="drawer-side ">
           <label htmlFor="my-drawer-2" className="drawer-overlay "></label>

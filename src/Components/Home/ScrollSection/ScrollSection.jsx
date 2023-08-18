@@ -23,9 +23,9 @@ const ScrollSection = () => {
 
   return (
   <>
-  <p className='  text-5xl md:text-center font-bold sm:my-3 md:py-6 lg:py-11 '>Use the full power of video <br /> <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text'>to grow your brand
-</span>
-</p>
+              <h3 className='text-4xl md:text-5xl md:text-center md:pt-4 font-bold mb-10 ml-10'>Use the full power of video <br/> <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  bg-clip-text text-transparent'>to grow your brand</span></h3>
+
+  
   <div  className='lg:hidden'>
 
 <div className='max-w-screen-md m-3 md:m-8 p-3 md:p-7 tracking-wide'>
@@ -131,3 +131,4 @@ const ScrollSection = () => {
 };
 
 export default ScrollSection;
+
