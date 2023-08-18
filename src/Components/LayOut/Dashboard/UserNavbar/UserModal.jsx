@@ -21,8 +21,8 @@ function UserModal({ user }) {
           <BsChevronDown className="hidden md:block text-gray-800 h-3 font-extrabold" />
         </li>
       )}</label>
-  <div tabIndex={0} className="dropdown-content z-[1] text-slate-300 menu  p-3 md:p-5 shadow-lg bg-black rounded-box  lg:w-32 ">
-  <div tabIndex={0} className="dropdown-content z-[1] text-slate-300 menu p-3 lg:px-9 md:p-5 shadow-lg bg-black rounded-box w-auto mr-48">
+  
+  <div tabIndex={0} className="dropdown-content z-[1] text-slate-300 menu lg:px-3 lg:pr-8 md:py-5 shadow-lg bg-black rounded-box w-auto mr-48">
   <p className="py-2">Hi,{user?.displayName.split(' ')[0]}</p>
 
  
@@ -99,7 +99,7 @@ function UserModal({ user }) {
   </div>
 </div>
     </div>
-    </div>
+  
   );
 }
 
