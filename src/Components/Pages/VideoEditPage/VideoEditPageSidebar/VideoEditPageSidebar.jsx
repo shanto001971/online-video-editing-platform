@@ -11,50 +11,50 @@ import { BsThreeDots } from "react-icons/bs";
 const VideoEditPageSidebar = () => {
   return (
     <div className="flex flex-col gap-6 items-center justify-center border-r-[1px] w-[50px] sm:w-[60px] h-auto py-2 z-10 shadow-md">
-      <div className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
+      <div className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group cursor-pointer">
         <SlCloudUpload className="text-[20px] sm:text-[28px]  group-hover:scale-95" />
         <span className="text-[8px] sm:text-[10px] font-medium">Uploads</span>
       </div>
 
-      <div className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
+      <button className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group cursor-pointer">
         <PiVideoLight className="text-[20px] sm:text-[28px]  group-hover:scale-95" />
         <span className="text-[8px] sm:text-[10px] font-medium">Videos</span>
-      </div>
+      </button>
 
-      <div className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
+      <button className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
         <LiaImageSolid className="text-[20px] sm:text-[28px]  group-hover:scale-95" />
         <span className="text-[8px] sm:text-[10px] font-medium">Images</span>
-      </div>
+      </button>
 
-      <div className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
+      <button className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
         <PiMusicNoteLight className="text-[20px] sm:text-[28px] group-hover:scale-95" />
         <span className="text-[8px] sm:text-[10px] font-medium">Music</span>
-      </div>
+      </button>
 
-      <div className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
+      <button className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
         <RxText className="text-[20px] sm:text-[28px] group-hover:scale-95" />
         <span className="text-[8px] sm:text-[10px] font-medium">Text</span>
-      </div>
+      </button>
 
-      <div className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
+      <button className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
         <TbMoodEdit className="text-[20px] sm:text-[28px] group-hover:scale-95" />
         <span className="text-[8px] sm:text-[10px] font-medium">Logo</span>
-      </div>
+      </button>
 
-      <div className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
+      <button className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
         <SiSemanticrelease className="text-[20px] sm:text-[28px]  group-hover:scale-95" />
         <span className="text-[8px] sm:text-[10px] font-medium">Elements</span>
-      </div>
+      </button>
 
-      <div className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
+      <button className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
         <GoProjectTemplate className="text-[20px] sm:text-[28px]  group-hover:scale-95" />
         <span className="text-[8px] sm:text-[10px] font-medium">Templates</span>
-      </div>
+      </button>
 
-      <div className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
+      <button className="flex flex-col items-center justify-center text-gray-700 hover:text-gray-950 group">
         <BsThreeDots className="text-[20px] sm:text-[28px] group-hover:scale-95" />
         <span className="text-[8px] sm:text-[10px] font-medium">More</span>
-      </div>
+      </button>
     </div>
   );
 };
