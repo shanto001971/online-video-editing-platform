@@ -1,0 +1,8 @@
+.custom-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Microsoft Edge */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 0; /* Chrome, Safari, and Opera */
+  }
